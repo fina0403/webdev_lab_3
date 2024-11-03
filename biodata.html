@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Biodata</title>
+    <style>
+        table {
+            width: 50%; 
+            border-collapse: collapse;
+            margin: 20px auto;
+            background-color: #ffe4e1; 
+        }
+        td {
+            padding: 10px;
+            border: 1px solid black;
+            vertical-align: top;
+        }
+        .sub-section-container {
+            width: 100%;
+            padding: 5px 0;
+        }
+        .sub-section {
+            display: flex;
+            justify-content: normal;
+            border-bottom: 1px solid black;
+            padding: 5px 0;
+        }
+        .sub-section:last-child {
+            border-bottom: none;
+        }
+        .label {
+            width: 40%; 
+        }
+        .value {
+            width: 60%; 
+        }
+        img {
+            width: 100px;
+            height: auto; 
+            display: block; 
+            margin: 0 auto; 
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Biodata</h1>
+    <table border="1">
+        <tr>
+            <td>Name</td>
+            <td>Nur Afrina Fasihah</td>
+            <td><img src="gambar.jpg" alt="Your Photo"></td>
+        </tr>
+        <tr>
+            <td>Date of Birth</td>
+            <td colspan="2">23/12/2003</td>
+        </tr>
+        <tr>
+            <td>Religion</td>
+            <td colspan="2">Islam</td>
+        </tr>
+        <tr>
+            <td>Race</td>
+            <td colspan="2">Malay</td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td colspan="2" class="sub-section-container">
+                <div class="sub-section">
+                    <div class="label">Street</div>
+                    <div class="value">Jalan Universiti</div>
+                </div>
+                <div class="sub-section">
+                    <div class="label">Town</div>
+                    <div class="value">Parit Raja</div>
+                </div>
+                <div class="sub-section">
+                    <div class="label">District</div>
+                    <div class="value">Batu Pahat</div>
+                </div>
+                <div class="sub-section">
+                    <div class="label">State</div>
+                    <div class="value">Johor</div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Contact</td>
+            <td colspan="2" class="sub-section-container">
+                <div class="sub-section">
+                    <div class="label">Mobile Phone</div>
+                    <div class="value">01126112312</div>
+                </div>
+                <div class="sub-section">
+                    <div class="label">Social Media</div>
+                    <div class="value"><a href="https://instagram.com/estrella_fin4">Your Profile</a></div> <!-- Updated link -->
+                </div>
+                <div class="sub-section">
+                    <div class="label">Website</div>
+                    <div class="value"><a href="https://github.com/fina0403/Lab_2.git">Your Website</a></div> <!-- Corrected link -->
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Course and Institution</td>
+            <td colspan="2">Software Engineering</td>
+        </tr>
+        <tr>
+            <td>Programming Skills</td>
+            <td colspan="2">
+                <ul>
+                    <li>Java</li>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Personal Interest</td>
+            <td colspan="2">Watch movies and reading novels.</td>
+        </tr>
+        <tr>
+            <td>Future Plan in 2025</td>
+            <td colspan="2">Get on the dean's list this semester and enjoy life to the fullest.</td>
+        </tr>
+    </table>
+</body>
+</html>
