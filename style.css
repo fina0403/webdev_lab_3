@@ -5,7 +5,7 @@ body {
     color: #333;
     text-align: center;
     margin: 0;
-    padding: 0;
+    padding: 20px; /* Maintain padding for body */
 }
 
 h1 {
@@ -27,7 +27,6 @@ h1 {
     background-color: #d17c97;
 }
 
-/* Container Styles */
 .biodata-container, .hobbies-container, .campus-life-container {
     display: flex;
     flex-direction: column;
@@ -45,32 +44,35 @@ h1 {
     margin: 10px 0;
 }
 
-/* Media Slot */
+.campus-life-container {
+    max-width: 800px; /* Set a maximum width for the container */
+    padding: 20px; /* Additional padding for the content */
+    background-color: #ffffff; /* White background for the content */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    border-radius: 8px; /* Rounded corners */
+}
+
 .media-slot {
-    width: 100%;
-    height: 200px;
-    background-color: #dfefff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    margin: 10px 0;
+    display: flex; /* Use flexbox for media slots */
+    justify-content: center; /* Center media boxes */
+    flex-wrap: wrap; /* Allow wrapping of media boxes */
+    width: 100%; /* Full width within the container */
+    margin-bottom: 20px; /* Space between media slots */
 }
 
-/* Moving Cat Animation */
-.moving-cat {
-    width: 100px;
-    position: relative;
-    animation: moveCat 3s infinite alternate;
-    margin: 20px 0;
+.media-box {
+    border: 2px solid #d17c97; /* Border for each media box */
+    border-radius: 10px; /* Rounded corners for media boxes */
+    padding: 10px; /* Padding inside media boxes */
+    background-color: #dfefff; /* Light background color */
+    margin: 10px; /* Margin for spacing between media boxes */
+    max-width: 300px; /* Set a max width for media boxes */
 }
 
-.moving-cat img {
-    width: 100%;
-    border-radius: 50%;
-}
-
-@keyframes moveCat {
-    0% { transform: translateX(-10px); }
-    100% { transform: translateX(10px); }
+.media-slot img,
+.media-slot video {
+    max-width: 50%; /* Responsive image/video */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Treat media as block elements */
+    margin: 0 auto; /* Center the media */
 }
