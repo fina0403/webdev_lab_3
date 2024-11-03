@@ -27,6 +27,7 @@ h1 {
     background-color: #d17c97;
 }
 
+/* Container Styles */
 .biodata-container, .hobbies-container, .campus-life-container {
     display: flex;
     flex-direction: column;
@@ -44,6 +45,7 @@ h1 {
     margin: 10px 0;
 }
 
+/* Media Slot */
 .media-slot {
     width: 100%;
     height: 200px;
@@ -53,4 +55,22 @@ h1 {
     align-items: center;
     border-radius: 8px;
     margin: 10px 0;
+}
+
+/* Moving Cat Animation */
+.moving-cat {
+    width: 100px;
+    position: relative;
+    animation: moveCat 3s infinite alternate;
+    margin: 20px 0;
+}
+
+.moving-cat img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+@keyframes moveCat {
+    0% { transform: translateX(-10px); }
+    100% { transform: translateX(10px); }
 }
